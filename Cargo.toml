@@ -1,0 +1,17 @@
+[package]
+name = "pathwrap"
+version = "0.0.0"
+edition = "2021"
+publish = false
+license = "GPL-3.0-or-later"
+
+[dependencies]
+anyhow = "1.0.82"
+env_logger = { version = "0.11.3", default-features = false }
+fxhash = "0.2.1"
+log = "0.4.21"
+tempfile = "3.10.1"
+
+[profile.release]
+panic = "abort"
+opt-level = "s"
